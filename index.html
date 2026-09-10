@@ -7,6 +7,11 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans selection:bg-blue-600 selection:text-white">
 
@@ -14,7 +19,6 @@
     <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/85 backdrop-blur-md border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <!-- Logo representation (Hexagon style matching your brand) -->
                 <div class="w-10 h-10 bg-gradient-to-tr from-blue-700 to-blue-500 rounded-xl flex items-center justify-center text-white font-bold shadow-lg shadow-blue-600/30">
                     <i class="fa-solid fa-hexagon-nodes"></i>
                 </div>
@@ -48,7 +52,7 @@
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#features" class="bg-blue-600 hover:bg-blue-500 text-white text-center px-8 py-3.5 rounded-xl font-semibold transition shadow-lg shadow-blue-600/30">Explore Features</a>
-                    <a href="#contact" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-center text-slate-300 px-8 py-3.5 rounded-xl font-semibold transition">Contact Us</a>
+                    <a href="#contact" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-center text-slate-300 px-8 py-3.5 rounded-xl font-semibold transition">Get in Touch</a>
                 </div>
             </div>
             <div class="relative flex justify-center">
@@ -74,7 +78,6 @@
                 <p class="text-slate-400">Comprehensive technology services tailored to drive modern business growth and digital excellence.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Feature 1 -->
                 <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition group">
                     <div class="w-14 h-14 bg-blue-600/10 text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fa-solid fa-code"></i>
@@ -82,7 +85,6 @@
                     <h3 class="text-xl font-bold mb-3">Custom Software & Web Design</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">High-performance web applications, responsive corporate websites, and tailor-made software solutions.</p>
                 </div>
-                <!-- Feature 2 -->
                 <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition group">
                     <div class="w-14 h-14 bg-blue-600/10 text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
@@ -90,7 +92,6 @@
                     <h3 class="text-xl font-bold mb-3">Cloud Computing & IT Infrastructure</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Scalable cloud hosting setups, server management, and robust enterprise IT configurations.</p>
                 </div>
-                <!-- Feature 3 -->
                 <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-blue-500/50 transition group">
                     <div class="w-14 h-14 bg-blue-600/10 text-blue-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fa-solid fa-bullhorn"></i>
@@ -102,8 +103,40 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-semibold px-3 py-1 rounded-full mb-4">ABOUT US</span>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Driving Innovation Through Professional IT Excellence</h2>
+                <p class="text-slate-400 text-base leading-relaxed mb-6">
+                    Cursor-Click IT Solutions (Pvt) Ltd is a legally registered private limited company dedicated to providing top-tier technological solutions. From software engineering and web development to cloud solutions and digital marketing, our multidisciplinary team ensures exceptional quality for every client.
+                </p>
+                <div class="grid grid-cols-2 gap-6 text-slate-300">
+                    <div class="border-l-2 border-blue-600 pl-4">
+                        <h4 class="font-bold text-white text-lg">100%</h4>
+                        <p class="text-xs text-slate-400">Client Satisfaction</p>
+                    </div>
+                    <div class="border-l-2 border-blue-600 pl-4">
+                        <h4 class="font-bold text-white text-lg">Professional</h4>
+                        <p class="text-xs text-slate-400">Expert Engineering Team</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl relative">
+                <div class="absolute -top-3 -right-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold">Pvt Ltd</div>
+                <h3 class="text-xl font-bold mb-4 text-white">Why Choose Cursor-Click?</h3>
+                <ul class="space-y-3 text-sm text-slate-400">
+                    <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-blue-500"></i><span>Registered & Trusted IT Corporation</span></li>
+                    <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-blue-500"></i><span>Modern Tech Stack & Creative Designs</span></li>
+                    <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-blue-500"></i><span>Reliable Support & Consultation</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-900">
+    <section id="contact" class="py-20 bg-slate-900/40 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
